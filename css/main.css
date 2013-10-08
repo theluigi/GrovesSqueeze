@@ -1,0 +1,465 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Fonts */
+
+
+/*
+ * Author styles
+ *
+ */
+
+@font-face {
+    font-family: 'whitney-bookregular';
+    src: url('../fonts/whitneybook-webfont.eot');
+    src: url('../fonts/whitneybook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/whitneybook-webfont.woff') format('woff'),
+         url('../fonts/whitneybook-webfont.ttf') format('truetype'),
+         url('../fonts/whitneybook-webfont.svg#whitney-bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'whitney-mediumregular';
+    src: url('../fonts/whitneymedium-webfont.eot');
+    src: url('../fonts/whitneymedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/whitneymedium-webfont.woff') format('woff'),
+         url('../fonts/whitneymedium-webfont.ttf') format('truetype'),
+         url('../fonts/whitneymedium-webfont.svg#whitney-mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    min-width:870px;
+    min-height:445px;
+	background:#111 url(../img/slide-1.jpg) no-repeat 0 0;
+	background-size:100% 100%;
+	background-attachment:fixed;
+	color:#fff;
+	font-family: whitney-bookregular, Calibri, Segoe, "Segoe UI", "Segoe WP", "Helvetica Neue", Helvetica, Arial, clean, sans-serif;
+
+}
+
+strong {
+	font-weight:bold;
+}
+
+a, a:link,
+a:visited {color:#f0b310;}
+a:active,
+a:hover {color:#fae7b2;}
+
+#logo {
+	position:absolute;
+	float:left;
+	bottom: 7.5%;
+	left: 1%;
+	
+}
+
+#logo img {
+	outline: 0;
+	max-width:95%;
+	height: auto;
+
+}
+.short-screen #logo {
+	/*background-color:rgba(255,255,255,0.85);*/
+	background:url(../img/white.png) repeat 0 0;
+}
+
+#backgroundreg {
+background:url(../img/couple.png) no-repeat 0 0;
+position: absolute;
+bottom: 0%;
+right: 0%;
+padding-right: 30px;
+width: 380px;
+height: 310px !important;
+
+}
+#register {
+	color: #FFFFFF;
+	position:absolute;
+	bottom: 0%;
+	right: 0%;
+	padding-left: 0%;
+	padding-right: 6%;
+	width: 260px !important;
+	height: 225px !important; /* 430px when labels are hidden */
+}
+.home #register h3,
+.error #register h3 {
+	margin:10px auto;
+	font-weight: bold;
+	font-size: 16px;
+	color: #576423;
+}
+.home #register h3 span,
+.error #register h3 span {
+
+}
+
+#copy {
+	font-size: 14px;
+	position:absolute;
+	bottom:0%;
+	min-height:210px;
+	padding:18px 23px 8px 5px;
+	line-height:1.3em;
+	/*background-color:rgba(255,255,255,0.85);*/
+	background:url(../img/white.png) repeat 0 0;
+	color:#000;
+	
+}
+
+#thankyoucopy {
+	font-size: 18px;
+	position:absolute;
+	left:-20px;
+	bottom:0%;
+	width:98%;
+	min-height:110px;
+	padding:18px 23px 18px 43px;
+	line-height:1.3em;
+	/*background-color:rgba(255,255,255,0.85);*/
+	background:url(../img/white.png) repeat 0 0;
+	color:#000;
+	
+}
+
+#thankyoucopy h2 {
+	font-size:22px;
+	font-family: whitney-mediumregular;
+	color:#e58e1a;
+	padding-left:230px;
+	margin-bottom:10px;
+}
+
+#thankyoucopy p {
+	padding-top:3px;
+	padding-left: 230px;
+	width: 70%;
+}
+
+#thankyoucopy .backed {
+	padding-top: 5px;
+	font-family: whitney-mediumregular;
+}
+
+.thank-you #logo {
+	position:absolute;
+	float:left;
+	bottom: 4%;
+	left: 1%;
+	
+
+}
+
+#copy img {
+	position: absolute;
+	bottom: 6%;
+	padding-left: 61%;
+}
+#copy h2 {
+	font-family: whitney-mediumregular;
+	font-size:18px;
+	font-weight:bold;
+	color:#e58e1a;
+	padding-left:230px;
+	margin-bottom:7px;
+}
+
+#copy .tagline {
+	font-family: whitney-mediumregular;
+}
+
+#copy .location {
+	font-family: whitney-mediumregular;
+	padding-top: 6px !important;
+}
+
+#copy p {
+	padding-top:3px;
+	padding-left: 230px;
+	width: 80%;
+}
+
+#privacypolicy {
+	position:absolute;
+	right:1%;
+	top:0px;
+	width:100px;
+	padding-bottom:10px;
+	text-align:center;
+	font-size:85%;
+	text-transform:uppercase;
+}
+#privacypolicy a {
+	color:#fff;
+	text-decoration:none;
+}
+
+#footer h3{
+	float: left;
+	font-size:15px;
+	font-weight:bold;
+	color:#e58e1a;
+	width: 220px;
+	height: 1px;
+	text-align: center;
+	padding-right: 5px !important;
+
+}
+
+#footer {
+	width: 1010px;
+	position: absolute;
+	bottom: 0%;
+	padding: 0 !important;
+	padding-left: 5px !important;
+	padding-bottom:10px !important;
+	margin: 0 !important;
+
+}
+
+#footer form {
+	padding-left: 18%;
+}
+
+
+/* form elements */
+
+
+label {
+	clear:both;
+	display:inline-block !important;
+	color:#fff;
+	font-size:10px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	padding-bottom: 5px;
+	padding-top: 0px;
+}
+form label span {
+}
+input {
+	width:75px;
+}
+
+form input#comments {
+	width: 150px;
+}
+
+input,
+textarea {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #fff;
+	-moz-box-shadow:inset 0 1px 4px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:inset 0 1px 4px rgba(0, 0, 0, 0.3);
+	box-shadow:inset 0 1px 4px rgba(0, 0, 0, 0.3);
+	padding:0px 8px 20px 8px;
+	font-family:inherit; /* specifying fonts here was making the text invisible in (you guessed it) IE; inherit seems to work better */
+	font-weight:normal;
+	font-size:12px;
+	color:#808080;
+}
+input:focus,
+textarea:focus {
+	outline:none;
+}
+
+textarea {
+
+	width:230px;
+	/*margin-bottom:6px;*/
+}
+.required {
+	display:none;
+	float:left;
+	color:#606060;
+	font-family:'MuseoSans500', 'Gill Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-size:10px;
+	letter-spacing:1px !important;
+	text-transform:uppercase;
+	padding-top:15px;
+	letter-spacing:2px;
+}
+button {
+	float: right;
+	width:220px;
+	height:37px;
+	overflow:hidden;
+	cursor:pointer;
+	border:none;
+	background:url(../img/button.png) no-repeat 0 0;
+}
+button:hover {
+	/*background-position:0 -43px;*/
+}
+
+/* Thank you page */
+
+.thank-you {
+	background-image:url(../img/preview.jpg);
+}
+.thank-you #register {
+	height:390px;
+	text-align:center;
+}
+.thank-you #register h3 {
+	margin:35px auto;
+	font-size:150%;
+	font-weight:bold;
+	color:#fff;
+}
+.thank-you #register p {
+	margin-bottom:35px;
+	font-size:110%;
+	line-height:150%;
+}
+
+/* Error page */
+.error #register {
+	height:517px;
+}
+#error {
+	padding:6px 26px 9px;
+	margin:0 -25px 10px;
+	color:#9e2a38;
+	background-color:#f0b310;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+/* Privacy and disclaimer pages */
+.privacy,
+.disclaimer {
+    min-width:100%;
+}
+
+.privacy #copy {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+	text-align:left;
+	font-family: Calibri, 'Open Sans',Georgia,'Times New Roman', serif;
+    position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:45px;
+	top: 18px;
+	width: 700px;
+	padding: 30px;
+	background: url(../img/white_box.png) repeat 0 0;
+	font-size: 75%;
+}
+
+}
+.disclaimer #copy {
+	clear:both;
+	position:relative;
+	margin:0 auto;
+	top:20px;
+	bottom:0;
+	width:70%;
+	height:60%;
+	padding:18px 23px;
+	font-size:75%;
+}
+.privacy #copy p,
+.disclaimer #copy p {
+	padding-top:3px;
+	margin:auto;
+	width: 100%;
+	padding-left:0;
+}
+
+.privacy #copy h2,
+.disclaimer #copy h2 {
+	padding-top:3px;
+	padding-bottom: 5px;
+	text-align: center;
+	margin:auto;
+	width: 100%;
+	padding-left:0;
+}
+
+.privacy #footer,
+.disclaimer #footer {
+	bottom:auto;
+	top:0;
+	padding-top:10px;
+}
+#close-button {
+	float:right;
+	margin-left:10px;
+	background: url(../img/close.png) no-repeat 0 0;
+
+}
+
+#close-button img {
+	position: auto !important;
+	bottom: auto !important;
+	padding-left: 0 !important;
+
+}
+
+
+/* Hide slideshow elements when JS absent */
+.load-item {
+	display:none;
+}
